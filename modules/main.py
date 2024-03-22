@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /txt Command to Downlaod From a Text file.\n")
+    editable = await m.reply_text("𝐇𝐢!\n\n𝐆𝐢𝐯𝐞 /master 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐭𝐨 𝐃𝐨𝐰𝐧𝐥𝐚𝐨𝐝 𝐅𝐫𝐨𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐟𝐢𝐥𝐞.\n")
 
 
 @bot.on_message(filters.command("restart"))
@@ -43,7 +43,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["txt"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('Hi\n\nTO download a test file send here » ')
+    editable = await m.reply_text('𝐇𝐢!\n\n𝐓𝐎 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐚 𝐭𝐞𝐬𝐭 𝐟𝐢𝐥𝐞 𝐬𝐞𝐧𝐝 𝐡𝐞𝐫𝐞 » ')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
