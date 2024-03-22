@@ -189,7 +189,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ Downloading »**\n\n**Name »** `{name}\nQuality » {raw_text2}`\n\n**Url »** `{url}`"
+                    Show = f"**📥 ＤＯＷＮＬＯＤＩＮＧ 📥 :-\n\nVideo Name📹 :- {name}\n\n𝐐𝐮𝐚𝐥𝐢𝐭𝐲:- {raw_text2}`\n\nBot made by 👉 **𝐌𝐚𝐒𝐓𝐞𝐑™🧑🏻‍💻**"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
