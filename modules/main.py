@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("𝐇𝐢!\n\n𝐆𝐢𝐯𝐞 /master 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐭𝐨 𝐃𝐨𝐰𝐧𝐥𝐚𝐨𝐝 𝐅𝐫𝐨𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐟𝐢𝐥𝐞.\n")
+    editable = await m.reply_text("𝐇𝐢!\n\n𝐆𝐢𝐯𝐞 /txt 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐭𝐨 𝐃𝐨𝐰𝐧𝐥𝐚𝐨𝐝 𝐅𝐫𝐨𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐟𝐢𝐥𝐞.\n")
 
 
 @bot.on_message(filters.command("restart"))
@@ -65,18 +65,18 @@ async def account_login(bot: Client, m: Message):
            return
     
    
-    await editable.edit(f"Total links found are **{len(links)}**\n\nSend From where you want to download initial is **1**")
+    await editable.edit(f"𝐓𝐨𝐭𝐚𝐥 🔗🔗🔗𝐥𝐢𝐧𝐤𝐬 𝐟𝐨𝐮𝐧𝐝 𝐚𝐫𝐞 **{len(links)}**\n\n𝐒𝐞𝐧𝐝 𝐅𝐫𝐨𝐦 𝐰𝐡𝐞𝐫𝐞 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐢𝐧𝐢𝐭𝐢𝐚𝐥 𝐢𝐬 **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**Enter Batch Name**")
+    await editable.edit("**𝐄𝐧𝐭𝐞𝐫 𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
     
 
-    await editable.edit("**Enter resolution**")
+    await editable.edit("**𝐄𝐧𝐭𝐞𝐫 𝐑𝐞𝐬𝐨𝐥𝐮𝐭𝐢𝐨𝐧**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -100,7 +100,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("Enter A Captio to add Otherwise send   **no**")
+    await editable.edit("𝐄𝐧𝐭𝐞𝐫 𝐀 𝐂𝐚𝐩𝐭𝐢𝐨 𝐭𝐨 𝐚𝐝𝐝 𝐎𝐭𝐡𝐞𝐫𝐰𝐢𝐬𝐞 𝐬𝐞𝐧𝐝 𝐧𝐨  **no**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -110,7 +110,7 @@ async def account_login(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the **Thumb url**\nEg » ```https://telegra.ph/file/5e937c29a415223ffaf9e.jpg```\n\nor Send `no`")
+    await editable.edit("𝐍𝐨𝐰 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 **Thumb url**\nEg » ```https://telegra.ph/file/5e937c29a415223ffaf9e.jpg```\n\n𝐎𝐫 𝐬𝐞𝐧𝐝 '𝐧𝐨'")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
