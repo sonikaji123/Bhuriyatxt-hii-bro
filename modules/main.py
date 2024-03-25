@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("𝐇𝐢!\n\n𝐆𝐢𝐯𝐞 /txt 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐭𝐨 𝐃𝐨𝐰𝐧𝐥𝐚𝐨𝐝 𝐅𝐫𝐨𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐟𝐢𝐥𝐞.\n")
+    editable = await m.reply_text("𝐇𝐢!\n\n𝐆𝐢𝐯𝐞 /master 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐭𝐨 𝐃𝐨𝐰𝐧𝐥𝐚𝐨𝐝 𝐅𝐫𝐨𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐟𝐢𝐥𝐞.\n")
 
 
 @bot.on_message(filters.command("restart"))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["txt"]))
+@bot.on_message(filters.command(["master"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝐇𝐢!\n\n𝐓𝐎 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐚 𝐭𝐞𝐬𝐭 𝐟𝐢𝐥𝐞 𝐬𝐞𝐧𝐝 𝐡𝐞𝐫𝐞 » ')
     input: Message = await bot.listen(editable.chat.id)
@@ -206,7 +206,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done")
+    await m.reply_text("꧁⭑⭒DOWNLOADING COMPLETED🚦⭑⭒꧂")
 
 
 bot.run()
